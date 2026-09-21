@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-mist-100 text-ink-900 font-body antialiased transition-colors duration-300;
+  }
+  html.dark body {
+    @apply bg-ink-950 text-mist-100;
+  }
+  ::selection {
+    @apply bg-signal-cyan/30;
+  }
+  :focus-visible {
+    outline: 2px solid #33d6c0;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-mist-300/60 bg-white/70 backdrop-blur-sm dark:bg-ink-900/60 dark:border-ink-600/50;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-signal-cyan px-6 py-3 font-display font-semibold text-ink-950 transition hover:brightness-110 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-mist-300 dark:border-ink-600 px-6 py-3 font-display font-semibold text-ink-900 dark:text-mist-100 transition hover:border-signal-cyan hover:text-signal-cyan active:scale-[0.98];
+  }
+  .label-eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-signal-cyan;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-mist-300 dark:border-ink-600 bg-white dark:bg-ink-800 px-4 py-3 text-sm outline-none transition focus:border-signal-cyan;
+  }
+}
+
+@layer utilities {
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(51, 214, 192, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(51, 214, 192, 0.06) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+}
