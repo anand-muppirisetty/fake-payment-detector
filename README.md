@@ -236,8 +236,14 @@ Building this project involved:
 
 **Anand Kumar Muppirisetty**
 
-- LinkedIn: [anand-kumar-muppirisetty](https://www.linkedin.com/in/anand-kumar-muppirisetty-884a59315)
-- Email: anandkumar.muppirisetty@gmail.com
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anand-kumar-muppirisetty-884a59315)
+[![Gmail](https://img.shields.io/badge/Gmail-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anandkumar.muppirisetty@gmail.com)
+
+</div>
+
+<br/>
 
 ---
 
