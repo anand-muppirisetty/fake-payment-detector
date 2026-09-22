@@ -5,7 +5,7 @@
 ### 🔍 AI-Powered Forensic Analysis for UPI Payment Screenshots
 **OCR · Computer Vision · Explainable Confidence Scoring**
 
-*A final-year B.Tech AI & ML project — detects edited/fake payment screenshots without ever touching real bank data.*
+*A B.Tech AI & ML project — detects edited/fake payment screenshots without ever touching real bank data.*
 
 <br/>
 
