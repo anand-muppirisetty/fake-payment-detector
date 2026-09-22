@@ -44,7 +44,7 @@ fake-payment-detector/
 ## Quick Start (Docker)
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/anand-muppirisetty/fake-payment-detector.git
 cd fake-payment-detector
 docker compose up --build
 ```
