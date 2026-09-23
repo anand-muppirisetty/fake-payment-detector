@@ -58,14 +58,27 @@ This project was built to apply full-stack development and applied computer-visi
 ```mermaid
 flowchart LR
     A[User] --> B[React Frontend]
-    B -->|REST + JWT| C[FastAPI Backend]
-    C --> D[Storage: UUID-named files]
+    B -->|REST API + JWT| C[FastAPI Backend]
+
+    C --> D[UUID-named File Storage]
+
     C --> E[OCR Extraction]
-    E --> F[Forensic CV Checks]
-    F --> G[CNN Signal]
-    G --> H[Confidence Scoring]
-    H --> I[(PostgreSQL)]
-    I --> B
+    C --> F[Forensic CV Checks]
+    C --> G[Metadata & Structural Validation]
+    C --> H[CNN / ML Analysis]
+
+    E --> I[OCR Signals]
+    F --> J[Forensic Signals]
+    G --> K[Validation Signals]
+    H --> L[ML Signal]
+
+    I --> M[Explainable Confidence Scoring]
+    J --> M
+    K --> M
+    L --> M
+
+    M --> N[(PostgreSQL)]
+    N --> B
 ```
 
 The frontend communicates with the backend exclusively through a versioned REST API. The AI pipeline (`ai/`) is a self-contained Python package independent of the web framework, so OCR, forensic checks, and scoring can be tested or reused without running the API server.
